@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nội quy thư viện · Thư viện Đại học</title><link rel="stylesheet" href="/css/library.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="/">Thư viện <span>Đại học</span></a><nav><a href="/">Trang chủ</a><a class="active" href="/rules">Nội quy</a><a th:if="${readerName != null}" href="/catalog">Tra cứu sách</a><a th:if="${readerName == null}" href="/login">Đăng nhập</a><a class="nav-cta" th:if="${readerName == null}" href="/register">Tạo tài khoản</a></nav></header>
+<main class="page-shell">
+  <p class="eyebrow">THÔNG TIN THƯ VIỆN</p>
+  <h1>Nội quy thư viện</h1>
+  <p class="muted">Vui lòng đọc kỹ trước khi đăng ký thẻ và mượn sách.</p>
+  <div class="rules-grid">
+    <article class="panel-card"><span class="rule-num">01</span><h2>Đối tượng sử dụng</h2><ul><li>Thẻ thư viện chỉ cấp cho sinh viên, học viên và giảng viên đang học tập hoặc công tác tại trường.</li><li>Tài khoản website được liên kết với hồ sơ trường còn hiệu lực.</li><li>Tài khoản bị khóa không thể đăng nhập.</li></ul></article>
+    <article class="panel-card"><span class="rule-num">02</span><h2>Thẻ thư viện</h2><ul><li>Phí cấp thẻ lần đầu: <b>50.000 đồng</b>; cấp lại: <b>20.000 đồng</b>.</li><li>Thẻ được thủ thư giao trực tiếp tại thư viện và chỉ kích hoạt sau khi giao.</li><li>Cấp lại khi thẻ bị mất hoặc hư hỏng.</li></ul></article>
+    <article class="panel-card"><span class="rule-num">03</span><h2>Mượn sách</h2><ul><li>Cần có thẻ hợp lệ để mượn sách trực tiếp tại quầy.</li><li>Tối đa <b>5 cuốn</b> trong <b>3 tuần</b>.</li><li>Có thể đặt trước trực tuyến; thủ thư sẽ duyệt và bạn đến nhận trong thời gian quy định.</li></ul></article>
+    <article class="panel-card"><span class="rule-num">04</span><h2>Gia hạn</h2><ul><li>Gia hạn <b>một lần</b>, tối đa <b>7 ngày</b>.</li><li>Không gia hạn sách đã quá hạn hoặc đang có người đặt trước.</li></ul></article>
+    <article class="panel-card"><span class="rule-num">05</span><h2>Vi phạm và xử phạt</h2><ul><li>Trả trễ: <b>5.000 đồng</b> mỗi cuốn mỗi ngày.</li><li>Sách hư hỏng: <b>75%</b> giá sách mới.</li><li>Sách bị mất: <b>100%</b> giá sách mới.</li></ul></article>
+    <article class="panel-card"><span class="rule-num">06</span><h2>Tài liệu điện tử</h2><ul><li>Độc giả đã đăng nhập được tra cứu và đọc tài liệu điện tử, không cần thẻ.</li><li>Khách chưa đăng nhập không được đọc tài liệu.</li></ul></article>
+  </div>
+</main>
+<footer><span>THƯ VIỆN ĐẠI HỌC</span><a href="/">Quay về trang chủ</a></footer>
+</body></html>

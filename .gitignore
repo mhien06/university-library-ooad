@@ -1,0 +1,6 @@
+.m2/
+target/
+.env
+dependency-reduced-pom.xml
+*.log
+library-storage/
